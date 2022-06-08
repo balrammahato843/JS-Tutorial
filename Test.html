@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="/TestJS.js"></script> -->
+    <script>
+      // document.write("Hello world <br> <br>"); // single line comment
+      // document.write("<i><b> Hello from Balram </b> </i>");
+
+      //-------------- VARIABLES --------------//
+
+      // var z="Hello Balram";
+      // document.write(z);
+
+      // var x= 10.25;
+      // document.write(x);
+
+    // let firstname="yahoo";
+    //  let firstname="baba";
+    //  document.write(firstname)
+
+//    var firstname="yahoo";     //with using var variable value of it gets updated but if we use let variable with same name again it shows error and doest not allows us to update
+
+//    var firstname="baba";
+//      document.write(firstname)
+
+
+// var second="Hello";    //we cannot assign values again to const
+// second="world";            
+// document.write(second);
+
+//-----------DATA TYPES---------------------------/////////////////////////
+
+// var x="Hello world"; ---->    String
+// var X=24;   --->              Number
+// var x= true; --->             Boolean
+// var x=["HTML","CSS","JS"]; --->Array
+// var x={ first:"jane" , last:"Doe"};  --->Object
+// var x=null;  --->             null
+// var x; --->                  undefined
+
+
+// var x="Y";                 //----Data type identifire----//
+// x = -34.50;
+//  x = false;
+//  x = undefined;
+
+// x = ["HTML","CSS","JS"];
+
+// x={
+//     name : "Balram Mahato",
+//     country : "India"
+// }
+
+//  x="34"
+
+// document.write(x);
+// document.write("<br>");
+// document.write(typeof x);
+
+//----------------ARITHMETIC OPERATORS--------------------////
+
+
+
+// var a=2;
+// var b=3;
+// //a++;
+// //a--;
+// var c= a/b;
+// var c=a%b;
+// var c=a ** b;  //Exponential
+
+// document.write(c)
+
+//---------------Assignment Operators-------------------//
+
+
+// var a=10;
+// var b=3;
+
+// // var c=a+b;
+// a**=b
+// a-=b;
+// document.write(a);
+
+
+//-----------------Google Console Console-------------//
+
+//var x=50;
+// console.log([1,2,3]);
+// console.table([1,2,3]);
+// console.error([1,2,3]);
+// console.time("Test");
+// console.warn("This is warning");
+// console.warn("This is warning");
+// console.warn("This is warning");
+// console.warn("This is warning");
+// console.warn("This is warning");
+// console.timeEnd("Test");
+//console.clear();
+
+// document.getElementById("main");  // to print on console it prints id tags used all iver document// document.getElementById("main").innerText   //
+// document.getElementById("main").innerText ; // to print inner main content of id
+// document.getElementById("main").innerHTML // to print with span tag
+
+
+//------Comparison Operator -------------//
+
+
+// var x=15;
+// var y=25;
+
+// console.log(x==y);
+// console.log( 23 !=22);
+// console.log( 23 ==22);
+// console.log(20>3);
+// console.log(3>30);
+// console.log(null== undefined);
+
+
+//-------------IF STATEMENT------------------------//
+
+
+// var a=100;
+// var b="100";
+
+// if(a==b)
+// {
+//     document.write("Yahoo baba");
+// }
+
+
+// //----------------------Lofical Operators-------------//
+
+// var a=10;
+// var b=15;
+
+// if(age >=18 && age <=21)
+// {
+//     console.log("Yes you are eligible")
+// }
+
+// if(a >=12 || b <=15)
+// {
+//     console.log("Yes you are eligible")
+// }
+
+// if (!a >=6 )
+// {
+//     console.log("Yes you are eligible")
+// }
+
+
+//-------------------------IF ELSE STATEMENT-------------------------------------//
+
+// var x=15;
+// if(x>30)
+// {
+//     document.write(" x is greater")
+// }
+// else
+// {
+//     document.write(" x is smaller")
+// }
+
+
+
+// var name="Balram";
+// var gender="Male";
+
+// if(gender == "Male")
+// {
+//     document.write("Hello Mr. " + name)
+// }
+// else
+// {
+//     document.write("Hello Miss. " + name)
+// }
+
+//-------------------IF ELSE IF STATEMENT--------------------------------------------//
+
+// var per = 55;
+
+// if(per >=80 && per <=100)
+// {
+//     document.write("You are in merit. ");
+// }
+// else if(per >=60 && per<80)
+// {
+//     document.write("You are in 1st division");
+// }
+// else if(per >=45 && per<60)
+// {
+//     document.write("You are in 2nd division ");
+// }
+// else if(per >=33 && per<45)
+// {
+//     document.write("You are in 3rd  division");
+// }
+// else if(per < 33)
+// {
+//     document.write("You are Fail");
+// }
+// else
+// {
+//     document.write("Please enter valid percentage ");
+// }
+
+//-------------------------- Conditional ( Ternary) Operator -------------------------------------------//
+
+// var a=100;
+// var b;
+// b="value is " + ( a>100 ? "true" : "False");
+
+// document.write(b);
+
+//-------------------SWITCH STATEMENT-----------------------------//
+
+// var day =6;
+// switch (day) {
+//     case 0:
+//         document.write("Today is Monday");
+
+//         break;
+//         case 1:
+//         document.write("Today is Tuesday");
+
+//         break;
+//         case 2:
+//         document.write("Today is wednesday");
+ 
+//         break;
+//         case 3:
+//         document.write("Today is thursday");            
+        
+//         break;
+//         case 4:
+//         document.write("Today is Friday");            
+
+//         break;
+//         case 5:
+//         document.write("Today is saturday");            
+
+//         break;
+//         case 6:
+//         document.write("Today is sunday");            
+         
+//         break;
+//         default: 
+//         document.write("Enter the valid week day");
+// }
+
+//------------------------- Alert Box -----------------------------------//
+
+// var a=30;
+// var b=20;
+// if(a>b)
+// {
+//     alert("A is greater")
+// }
+// else
+// {
+// alert("Hello Everybody")
+// }
+
+//-------------------CONFIRM BOX-------------------------------------//
+
+// var a = confirm ("Do you like our website ? ");
+
+// if(a)
+// {
+//     alert("Thanks");
+// }
+// else{
+//     alert("sorry");
+// }
+
+
+//---------------------------PROMPT BOX---------------------------------//
+
+// var a=prompt("What is your Name ? ");
+
+// document.write(a);
+
+// var per = prompt("What is your percentage ?");
+
+// if(per >=80 && per <=100)
+// {
+//     document.write("You are in merit. ");
+// }
+// else if(per >=60 && per<80)
+// {
+//     document.write("You are in 1st division");
+// }
+// else if(per >=45 && per<60)
+// {
+//     document.write("You are in 2nd division ");
+// }
+// else if(per >=33 && per<45)
+// {
+//     document.write("You are in 3rd  division");
+// }
+// else if(per < 33)
+// {
+//     document.write("You are Fail");
+// }
+// else
+// {
+//     document.write("Please enter valid percentage ");
+// }
+
+//-----------------Function------------------------------------//
+
+// function hello()
+// {
+//   document.write("Hello Everybody");
+
+// }
+// function yahoo()
+// {
+//   document.write("Hello Balram");
+// }
+// hello();
+// document.write("<br>");
+// document.write("<br>");
+// hello();
+// document.write("<br>");
+// document.write("<br>");
+// hello();
+// document.write("<br>");
+// document.write("<br>");
+// hello();
+
+
+// document.write("<br>");
+// document.write("<br>");
+
+
+// yahoo();
+
+
+//----------------------------------Funtions with parameters------------------------------//
+
+
+
+// function sum(a,b)
+// {
+//   document.write(a+b);
+// }
+
+// sum(21,23);
+// document.write("<br>");
+// sum(27,98);
+
+// function hello(fname, lname)
+// {
+//   document.write("Hello " + fname + " " + lname);
+// }
+
+// hello("balram","mahato");
+
+// function hello(fname="uttam", lname="singh")
+// {
+//   document.write("Hello " + fname + " " + lname);
+// }
+
+// hello();
+// hello("tanveer","patel");
+
+
+//------------------------Funtions with Return value----------------------------------------//
+
+// function fullname(fname="rahul",lname="butwape")
+// {
+//   var a= fname + "- " +lname;
+
+//   return a;
+// }
+
+// var fn = fullname("aryan","singh");
+// document.write(fn)
+
+
+// function sum(math,eng,sc)
+// {
+//   var s=math+eng+sc;
+//   return s;
+// }
+// function percentage(tt)
+// {
+//   var per = (tt/300) *100;
+//   document.write(per);
+// }
+
+// var total = sum(55,65,75);
+// percentage(total);
+// // document.write(total);
+
+//--------------------------- Global & Local Variable ---------------------------------------//
+
+// var a="Balram Mahato"
+
+// function hello()
+// {
+//   document.write( a + "<br>");
+// }
+
+// hello();
+// document.write(a);
+
+
+// function hello()
+// {
+//   var a="Balram Mahato"
+//   document.write( a + "<br>");
+// }
+
+// hello();
+// document.write(a);
+
+//------------------Events-----------------------------------------//
+
+
+// function hello()
+// {
+//  // document.write("hello everyone");
+//   alert("Hello balram")
+
+// }
+
+//--------------While Loop-------------------------------------//
+
+// var a=10;
+// document.write("<ul>");
+// while(a >= 1)
+// {
+//   document.write("<li>" + a +  ") Balram mahato </li>");
+//   a--;
+// }
+// document.write("</ul");
+
+//--------------------DO WHILE LOOP----------------------------------------//
+
+// var a = 1;
+
+// do{
+//   document.write(a +"Balram mahato <br>");
+//   a++;
+// } while(a<=10)
+
+
+//-------------------for Loop------------------------------------//
+
+// for( var a=1; a<=10 ; a++)
+// {
+//   document.write(a +   "Balram Mahato<br>");
+// }
+
+//--------------Break & continue statement-----------------------------//
+
+// for( var a=1; a<=10 ; a++)
+// {
+//   if(a==3)
+//   {
+//     document.write("Hey : " + a + "<br>");
+//     break;
+//     //contiue;
+
+//   }
+//   document.write("NUmber : " + a + "<br>");
+// }
+
+
+//----------------------------Even/Odd Number with Loop------------------------------------------------//
+
+// for(var a=1 ; a<=100 ; a++)
+// {
+//   if( a%2==0)
+//   {
+//   document.write(a + " Number is  even <br>")
+//   }
+//   else{
+//     document.write(a + " Number is  odd <br>")
+//   }
+// }
+
+//------------------------Nested Loop----------------------------//
+
+// for(var a=1; a<=100 ; a=a+10)
+// {
+// for( var b=a ; b<a+10; b++)
+// {
+//   document.write(b + " ");
+// }
+// document.write("<br>");
+// }
+
+//-------------------------Nested Loop Examples Pattern---------------------------------//
+
+// for( var a=1 ; a <= 5 ; a++)
+// {
+//   for(var b=1; b<=a ; b++)
+//   {
+//     document.write(b+ " ");
+//   }
+//   document.write("<br>");
+// }
+
+
+// for(var i=1 ; i<=5 ; i++)
+// {
+//   for(var j=1 ; j<=i ; j++ )
+//   {
+//     document.write(i + " ");
+//   }
+//   document.write("<br>");
+// }
+
+// for(var i=5 ; i<=1 ; i--)
+// {
+//   for(var j=1 ; j<=i ; j++)
+//   {
+//     document.write(a);
+//   }
+//   document.write("<br>");
+// }
+
+
+
+// for(var i=5 ; i>=1 ; i--)
+// {
+//   for(var j=i ; j >=1 ; j--)
+//   {
+//     document.write(j);
+//   }
+//   document.write("<br>");
+// }
+
+
+//--------------------------------Arrays---------------------------------//
+ //    0 , 1 ,2
+// var ary = [10,20,30,40,50];
+// var sum=0;
+// document.write("<ul>")
+// for( var a=0 ; a<=4 ; a++)
+// {
+// document.write("<li>" +ary[a]+"</li>");
+// sum=sum +ary[a];
+// }
+// document.write("</ul>");
+// document.write("Total sum : " + sum);
+
+
+// var ary = [10,"Balram","sara",true,null];
+// var sum=0;
+// document.write("<ul>")
+// for( var a=0 ; a<=4 ; a++)
+// {
+// document.write("<li>" +ary[a]+"</li>");
+// sum=sum +ary[a];
+// }
+// document.write("</ul>");
+
+
+//-----------------Arrays-II------------------------------//
+
+// var ary = new Array();
+//  ary[0] = 10;
+//  ary[1]="Balram";
+//  ary[2]= true;
+//  ary[3]= "Mahato";
+//  ary[4]= false;
+//  document.write("<ul>")
+//  for( var a=0 ; a<=4 ; a++)
+//  {
+//  document.write("<li>" +ary[a]+"</li>");
+
+//  }
+// document.write("</ul>");
+
+
+// var ary = new Array();
+// for( var g=0 ; g<51 ; g++)
+// {
+//   ary[g] = prompt("Enter the value : ");
+// }
+//  document.write("<ul>")
+//  for( var a=0 ; a<=4 ; a++)
+//  {
+//  document.write("<li>" +ary[a]+"</li>");
+
+//  }
+// document.write("</ul>");
+
+
+//------------------------MultiDimensrional Array-----------------------------------------------------//
+
+// var ary=
+// [
+//            ["Balram" ,18,"Male","Mechanical"],
+//            ["Uttam",19,"Male","Computer"],
+//            ["Tanveer",20,"Male" ,"Civil"],
+//            ["Rahul",21,"Male" ,"Electrical"],
+//            ["munna",34,"male","B.com"]
+// ];
+// // document.write(ary[2][0])
+// document.write("<table border='1px' cellspacing='0'>");
+
+// for(var a=0; a<ary.length ; a++)
+// {
+//   document.write("<tr>");
+//   for(var b=0; b<ary.length ; b++)
+//   {
+//     document.write("<td>" + ary[a][b] + "</td> ");
+//   }
+//   document.write("</tr>");
+// }
+// document.write("</table>");
+
+
+//-------------------Modify & Remove Array Element--------------------------------//
+
+// var a=["Balram", 18, "Male", "BCA"];
+// document.write(a +"<br>")
+// a[0]="Uttam";
+// document.write(a +"<br>")
+// a[1]=20;
+// document.write(a)
+
+// delete a[2];
+// document.write(a + "<br>")
+// document.write(a[2])
+
+//----------------------Array Methods----------------------------------------//
+
+
+// var a= ["sanjay" , "Aman" , "rehman" , "Karan"];
+
+// document.write(a + "<br> <br>");
+// a.sort();
+// document.write(a + "<br>");
+
+// a.reverse();
+// document.write(a + "<br>");
+
+
+//-------------------------Array Methods Pop() & Push()---------------------------------------//
+
+
+// var a= ["sanjay" , "Aman" , "rehman" , "Karan"];
+
+
+// document.write(a + "<br> <br>");
+// a.pop();
+// document.write(a + "<br> <br>");
+// a.push("HItesh")
+// document.write(a + "<br> <br>");
+
+//------------------------------Array Methods Shift & Unshift-------------------------------------//
+
+// var a= ["sanjay" , "Aman" , "rehman" , "Karan"];
+// document.write(a + "<br> <br>");
+// a.shift()
+// document.write(a + "<br> <br>");
+// a.unshift("Hitesh");
+// document.write(a + "<br> <br>");
+
+
+//--------------------------------Array Methods concat & Join-------------------------------------------------//
+
+// var a= ["sanjay" , "Aman" , "rehman" , "Karan"];
+// var  b=["jaggi", "Balram"];
+// //var d=["Neha", "Mahima"]
+
+// // var c=a.concat(b,d);
+
+// //var b=a.concat("jaggi", "Balram");
+// var c=a.concat(b)
+// document.write(c + "<br> <br>");
+// var d= c.join(" <br> ");
+// document.write(d);
+
+
+//---------------------------Array Methods slice & splice-------------------------------------------//
+
+
+// var a= ["sanjay" , "Aman" , "rehman" , "Karan"];
+// document.write(a + "<br> <br>");
+// //var b=a.slice(1,3)
+// //a.splice(2,0,"khushi","balram")
+// document.write(a);
+
+//-----------------------Array Mthods isArray ---------------------------------------//
+
+//var a= ["sanjay" , "Aman" , "rehman" , "Karan"];
+// var a=10;
+// document.write(a + "<br><br>");
+
+// // var b = Array.isArray(a);
+// if(Array.isArray(a))
+// {
+//   document.write("This is an Array")
+// }
+// else
+// {
+//   document.write("This is not an Array")
+// }
+
+//--------------------indexOf & LastindexOf--------------------------//
+
+// var a= ["sanjay" , "Aman" , "rehman" , "Aman" ,"Karan"];
+// document.write(a + "<br><br>");
+//var b=a.indexOf("rehman")
+// var b=a.indexOf("neha")   // will give -1
+// document.write(b)
+
+// var b=a.lastindexOf("Aman")   // starts index from last
+// document.write(b)
+
+
+//-------------------Arrays includes methods--------------------//
+
+// var a= ["sanjay" , "Aman" , "rehman" , "Aman" ,"Karan"];
+
+// var b=a.includes("sanjay")
+// document.write( b +"<br> <br>")        // returns boolean
+
+// var b=a.includes("neha")
+// document.write( b +"<br> <br>")  
+
+//---------------------some() & every()--------------->
+
+// var ages =[10,13,15,2];
+// document.write(ages + "<br><br>");
+
+// var b=ages.some(checkAdult);
+
+// document.write(b + " <br> <br>");
+
+// function checkAdult(age)
+// {
+//   return age >=18;
+// }
+
+
+// var ages =[10,13,15,2];
+// document.write(ages + "<br><br>");
+
+// var b=ages.every(checkAdult);    //every condtion should pass
+
+// document.write(b + " <br> <br>");
+
+// function checkAdult(age)
+// {
+//   return age >=18;
+// }
+
+
+//---------------------------- Find & FindIndex--------------------------------//
+
+
+// var ages =[3,13,28,2];
+// document.write(ages + "<br> <br>");
+
+// var b = ages.find(checkAdult);
+// document.write(b + "<br> <br>");
+
+// function checkAdult(age)
+// {
+//   return age >=18;
+// }
+
+
+
+// var ages =[3,13,28,2];
+// document.write(ages + "<br> <br>");
+
+// var b = ages.findIndex(checkAdult);
+// document.write(b + "<br> <br>");
+
+// function checkAdult(age)
+// {
+//   return age >=18;
+// }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </head>
+  <body  >
+<!-- <button onclick="hello()">click me</button> -->
+<!-- <p ondblclick="hello()">click on me</p> -->
+<!-- <p oncontextmenu="hello()">click on me</p> -->
+<!-- <p onmouseenter="hello()">click on me</p> -->
+<!-- <p onmouseout="hello()">click on me</p> -->
+<!-- <p onmousedown="hello()">click on me</p> -->
+<!-- <p onmouseup="hello()">click on me</p> -->
+<!-- <p onmouse="hello()">click on me</p> -->
+<!-- <p onkeypress="hello()">click on me</p>      // works only in body tag -->
+<!-- <p onresize="hello()" >click on me</p>    // works only in body tag -->
+<!-- <p onscroll="hello()">click on me</p>  // add lorem 200 works only in body tag -->
+<!-- <p onkeypress="hello()">click on me</p>  // works only in body tag --> 
+<!-- <p onload="hello()">click on me</p> // works only in body tag --> 
+<!-- <p onload="hello()" >click on me</p> // works only in body tag  but not working in chrome -->
+
+
+</body>
+</html>
